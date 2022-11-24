@@ -51,4 +51,4 @@ options.Events.OnRedirectToAccessDenied = (context) =>
 };
 ```
 
-Why? Users are not authorization (even if they're authenticated) will not allowed to access resource that doesn't set to them. By default ASP Net core will redirect to "Account/AccessDenied" path. In case we don't provide the controller and action method, then API will recognized as HTTP 404. It will confusing us, why it's 404, it should be 403 (Method Not Allowed)
+Why? Users are not authorization (even if they're authenticated) will not allowed to access resource that doesn't set to them. By default ASP Net core will redirect to "Account/AccessDenied" path. In case we don't provide the controller and action method, then API will recognized as HTTP 404. It will confusing us, why it's 404, it should be 403 (Forbidden)
